@@ -20,6 +20,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 
 ## From angular-rails.com
+gem 'bower-rails'
 gem 'sass', '3.2.19'
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
