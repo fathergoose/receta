@@ -21,6 +21,7 @@ gem 'jbuilder', '~> 2.0'
 
 ## From angular-rails.com
 gem 'bower-rails'
+
 gem 'sass', '3.2.19'
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
@@ -29,6 +30,14 @@ group :test, :development do
   gem "database_cleaner"
   gem "selenium-webdriver"
 end
+
+gem 'foreman'
+group :production, :staging do
+  gem 'rails_12factor'
+  gem 'rails_stdout_logging'
+  gem 'rails_serve_static_assets'
+end
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
